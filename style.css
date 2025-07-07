@@ -1,0 +1,165 @@
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: #f9f9f9;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  color: #333;
+}
+
+nav {
+  background-color: #222;
+  padding: 0.625rem 0;
+}
+
+nav ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  margin: 0 0.9375rem;
+  padding: 1rem;
+
+}
+
+nav ul a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+nav ul li:hover {
+  background-color: var(--mainColor);
+}
+
+main {
+  padding: 4rem;
+}
+
+main#formacao {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+h1 {
+  font-size: 2rem;
+  color: var(--mainColor);
+  text-align: center;
+}
+
+form {
+  max-width: 31.25rem;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+form label {
+  margin-top: 0.625rem;
+}
+
+form input,
+form textarea {
+  padding: 0.5rem;
+  margin-top: 0.3125rem;
+  border: 0.0625rem solid #ccc;
+  border-radius: 0.25rem;
+}
+
+:root {
+  --cardBg: #e0e0e0;
+  --mainColor: #a87e47;
+}
+
+.wrapper-ability {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 16px;
+}
+
+.wrapper-ability:has(article:hover) article:not(:hover) {
+  opacity: 0.4;
+}
+
+.ability-card {
+  position: relative;
+  width: 25rem;
+  aspect-ratio: 1;
+  max-width: 120px;
+  padding: 16px;
+  aspect-ratio: 1 / 1;
+  border-radius: 24px;
+  background-color: var(--cardBg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition-duration: .3s;
+  transition-timing-function: ease;
+  font-size: 16px;
+  text-align: center;
+  cursor: default;
+  user-select: none;
+  box-sizing: border-box;
+  will-change: transform, background-color;
+  color: #333;
+  transition-property: background-color, transform, color;
+}
+
+.ability-card:hover {
+  background-color: var(--mainColor);
+  transform: translateY(-0.5rem);
+  color: white;
+}
+
+#rocket-svg {
+  max-width: 460px;
+}
+
+main section {
+  flex: 1 1 60%;
+  max-width: 60%;
+}
+
+main aside {
+  flex: 1 1 35%;
+  max-width: 35%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.submit-button {
+  margin-top: 0.9375rem;
+  padding: 0.625rem;
+  background-color: #222;
+  color: white;
+  border: none;
+  border-radius: 0.25rem;
+  cursor: pointer;
+
+  transition: .1s ease-in-out;
+}
+
+.submit-button:hover {
+  background-color: var(--mainColor);
+}
+
+li a {
+  color: var(--mainColor);
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+.obs {
+  font-size: 12px;
+}
